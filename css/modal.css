@@ -14,7 +14,7 @@
     background-color: #f4f4f4;
     margin: 15% auto;
     width: 70%;
-    box-shadow: 0 5px 8px 0 rgba(0, 153, 241, 0.2),0 7px 20px 0 rgba(86, 216, 0, 0.2);
+    box-shadow: 0 5px 8px 0 #cad87733,0 7px 20px 0 #040f0033;
 
     animation-name: modalopen;
     animation-duration: 1s;
@@ -26,7 +26,7 @@
 
 
 .modal-header {
-    background: coral;
+    background: #1d5b00;
     padding: 15px;
     color: white;
 }
@@ -41,7 +41,7 @@
 }
 
 .modal-footer {
-    background: coral;
+    background: #1d5b00;
     padding: 10px;
     color: white;
     text-align: center;

@@ -29,13 +29,13 @@ body {
       background: rgba(4, 15, 0, 0.9);
       z-index: -1; }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading, h2.lg-heading, h3.lg-heading, h4.lg-heading, h5.lg-heading, h6.lg-heading {
     font-size: 6rem;
     text-shadow: 2px 2px 5px black; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading, h2.sm-heading, h3.sm-heading, h4.sm-heading, h5.sm-heading, h6.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 0rem;
     text-shadow: 2px 2px 5px black; }
@@ -159,8 +159,11 @@ main {
         color: #1d5b00; }
   main#home {
     overflow: hidden; }
-    main#home h1 {
-      margin-top: 15vh; }
+    main#home .tiny-heading {
+      margin-top: 15vh;
+      font-size: 1.5rem;
+      color: #1d5b00;
+      text-shadow: 1px 1px 2px #3a3a3a; }
 
 /*** ABOUT PAGE CONTENT ***/
 .about-info {
@@ -180,13 +183,23 @@ main {
   .about-info .attraction {
     background: #0b2900;
     padding: .5rem;
-    border-bottom: #1d5b00 5px solid; }
+    border-bottom: #1d5b00 5px solid;
+    text-align: center; }
+    .about-info .attraction h3 {
+      padding-bottom: 5px;
+      font-size: 1.5rem; }
   .about-info .attraction-1 {
     grid-area: attr1; }
   .about-info .attraction-2 {
     grid-area: attr2; }
   .about-info .attraction-3 {
     grid-area: attr3; }
+  .about-info .attractionImg {
+    width: 224px;
+    outline: 2px solid #1d5b00;
+    transition: all .5s ease-in-out; }
+    .about-info .attractionImg:hover {
+      outline: 3px solid #e7edab; }
 
 /*** TEAM PAGE CONTENT ***/
 .employees {
@@ -247,12 +260,12 @@ main {
     grid-template-columns: repeat(4, 1fr); } }
 
 /*** Desktop & Laptops ***/
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 874px) and (max-width: 1170px) {
   .employees {
     grid-template-columns: repeat(3, 1fr); } }
 
 /*** Tablet & Small Laptops ***/
-@media screen and (min-width: 526px) and (max-width: 768px) {
+@media screen and (min-width: 526px) and (max-width: 873px) {
   main {
     align-items: center;
     text-align: center; }
@@ -281,7 +294,8 @@ main {
     grid-template-columns: 1fr;
     display: block; }
     .about-info .attraction {
-      margin-bottom: 1rem; }
+      width: 50%;
+      margin: auto auto 1rem auto; }
   .employees {
     grid-template-columns: repeat(2, 1fr); } }
 
